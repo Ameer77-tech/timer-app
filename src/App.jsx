@@ -14,7 +14,7 @@ const App = () => {
   
   const [time, settime] = useState(0)
   const [intervalid, setintervalid] = useState(null)
-  const [timem, settimem] = useState(0)
+ 
 
   const handleButtonClick = (action) => {
     console.log(`${action} button clicked`);
@@ -60,7 +60,7 @@ const App = () => {
   return (
     <>
     <Header/>
-    <Timer time={time} timem={timem}/>
+    <Timer time={time} />
     <Buttons  onButtonClick={handleButtonClick}/>
     </>
   )
